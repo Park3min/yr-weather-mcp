@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yr-weather-mcp"
+version = "0.1.0"
+dependencies = [
+    "fastmcp"
+]
+
+[project.scripts]
+yr-weather-mcp = "yr_server:main"
