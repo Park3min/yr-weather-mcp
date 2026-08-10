@@ -1,0 +1,20 @@
+{
+  "dxt_version": "0.1",
+  "name": "yr-weather-mcp",
+  "display_name": "YR Weather MCP",
+  "version": "0.1.0",
+  "description": "노르웨이 기상청(YR) API 기반 Claude Desktop 날씨 MCP 확장 프로그램",
+  "author": {
+    "name": "Kyungin Park"
+  },
+  "server": {
+    "type": "python",
+    "entry_point": "yr_server.py",
+    "mcp_config": {
+      "command": "python",
+      "args": [
+        "${__dirname}/yr_server.py"
+      ]
+    }
+  }
+}
